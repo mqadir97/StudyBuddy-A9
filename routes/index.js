@@ -2,7 +2,7 @@
 /*
  * GET home page.
  */
-// var data = require("../data.json");
+var data = require("../data.json");
 
 exports.view = function(req, res){
 
@@ -20,7 +20,6 @@ exports.view = function(req, res){
 	// data.friends.push(newFriend);
 	// var fs = require('fs');
 	// fs.writeFileSync('../beta.json', JSON.stringify(newFriend));
-
-
-  res.render('index');
+  console.log(data);
+  res.render('index',data);
 };

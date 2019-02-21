@@ -17,6 +17,10 @@ var profile = require('./routes/profile');
 
 var searchbar = require('./routes/searchbar');
 
+//var studybuddies = require('./views/studybuddies');
+
+var add = require('./routes/add');
+
 var app = express();
 
 // all environments
@@ -52,6 +56,9 @@ app.get('/index', index.view);
 app.get('/profile', profile.viewProfile);
 
 app.get('/searchbar', searchbar.viewSearchbar);
+
+
+app.get('/add', add.addClass);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

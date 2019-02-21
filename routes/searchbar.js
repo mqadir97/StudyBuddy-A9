@@ -1,4 +1,4 @@
-exports.viewSearchbar = function(req, res) { 
-  // controller code goes here 
-  res.render('searchbar');
-};
+exports.viewSearchbar=function(req,res){
+	
+	res.render('searchbar');
+}

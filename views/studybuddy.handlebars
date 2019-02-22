@@ -9,7 +9,7 @@
 
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/bootstrap-theme.css" rel="stylesheet">
-  <link rel="stylesheet" href="/css/searchbar.css">
+  <link rel="stylesheet" href="/css/studybuddy.css">
 
   <script>
     function goBack() {
@@ -17,13 +17,13 @@
     }
   </script>
 
-  <title>SearchBar</title>
+  <title>StudyBuddy</title>
 
  </head>
 <body>
 <!--<button onclick="goBack()" >Back</button>-->
 <a href="/index"><input type="button" value="back" onclick="goBack()"></a>
-<h5>Add Your Courses</h5>
+<h5>Add Your StudyBuddy</h5>
   <!--animation <div class="buscar-caja">
     <input type="text" name="" class="buscar-txt" placeholder="type in course name..."/>
       <a class="buscar-btn">
@@ -31,7 +31,7 @@
       </a>
   </div> -->
   {{#each class}}
-    <div class="class">
+    <div class="buddy">
       <!--<img class="img-responsive" src="{{imageURL}}"> -->
         <a href="#">
           <p>{{name}}</p>
@@ -43,13 +43,13 @@
     <!--<h3>Add a class</h3>-->
       <div class="form-group">
         <label for="name">Name:</label>
-        <input type="text" class="form-control" id="name" placeholder="Name" name="name" href="index.handlebars">
+        <input type="text" class="form-control" id="name" placeholder="Name" name="name">
       </div>
       <!--<div class="form-group">
         <label for="description">Description:</label>
         <input type="text" class="form-control" id="description" placeholder="Description" name="description">
       </div>-->
-      <input type="submit" id="submitBtn" class="btn btn-default" value="Add the class"></input>
+      <input type="submit" id="submitBtn" class="btn btn-default" value="Add the buddy"></input>
 
       <script src="js/jquery-1.11.0.js"></script>
       <script src="js/bootstrap.js"></script>

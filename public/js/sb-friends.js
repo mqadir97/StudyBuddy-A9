@@ -14,6 +14,13 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected!");
+	/*$("a.form-group").click(projectClick);
+
+	function projectClick(e){
+		e.preventDefault();
+
+		$(this).css("background-color", "red");
+	}*/
 }
 
 function anagrammedName(name) {

@@ -26,13 +26,28 @@
 <div id="container">
 <a href="resetPwd.html" style=" margin-right:0px; font-size:13px; font-family:Tahoma, Geneva, sans-serif;">Reset password?</a>
     <a href="forgetPwd.html" style=" margin-left:30px; font-size:13px; font-family:Tahoma, Geneva, sans-serif;">Forget password</a>
-    </div><br /><br /><br /><br /><br /><br />
-Don't have account?<a href="sgnup.html" style="font-family:'Play', sans-serif;">&nbsp;Sign Up</a>
+    </div><br /><br />
+
+    <p class="facebookLogin">Please login through Facebook<br /><br />
+			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+			</fb:login-button>
+			</p>
+		</div>
+
+		<!--<div id="facebookPhoto" class="profile">
+			<h3>Profile Photo</h3>
+			<img id="photo" class='img-responsive' src="http://hci.stanford.edu/courses/cs547/Resources/Pictures/klemmer_grad.jpg" />
+		</div> 
+
+Don't have account?<a href="sgnup.html" style="font-family:'Play', sans-serif;">&nbsp;Sign Up</a> -->
 
 </form>
 </div>
 
 <script src="/routes/logn.js"></script>
+
+{{> facebook}}
+	<script src="/js/facebook.js"></script>
 
 </body>
 

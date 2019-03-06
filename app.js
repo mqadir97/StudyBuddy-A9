@@ -19,9 +19,13 @@ var searchbar = require('./routes/searchbar');
 
 var studybuddy = require('./routes/studybuddy');
 
+var addSB = require('./routes/addSB');
+
 var add = require('./routes/add');
 
 var app = express();
+
+var frnds = require('./routes/frnds');
 
 
 
@@ -61,10 +65,11 @@ app.get('/searchbar', searchbar.viewSearchbar);
 
 app.get('/studybuddy', studybuddy.viewStudybuddy);
 
-
+app.get('/addSB', addSB.addBuddy);
 
 app.get('/add', add.addClass);
 
+ app.get('/frnds', frnds.addFrnds);
 
 
 http.createServer(app).listen(app.get('port'), function(){

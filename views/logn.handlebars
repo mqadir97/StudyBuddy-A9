@@ -2,9 +2,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Untitled Document</title>
+<title>Login</title>
 <link href="/css/logn.css" rel="stylesheet" type="text/css" />
 <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	{{> facebook}}
+	<script src="/js/facebook.js"></script>
 </head>
 
 <body>
@@ -20,14 +24,10 @@
 <!-- <button href="/logn" type="button" > Login </button> -->
 <a href ="/index"><input type="button" value="Log In" /></a><br /><br />
 
-<!-- <a id ="myButton"><input type="button" value="Log In" /></a><br /><br /> -->
-<!--   -->
+
 
 <div id="container">
-  <!--
-<a href="resetPwd.html" style=" margin-right:0px; font-size:13px; font-family:Tahoma, Geneva, sans-serif;">Reset password?</a>
-    <a href="forgetPwd.html" style=" margin-left:30px; font-size:13px; font-family:Tahoma, Geneva, sans-serif;">Forget password</a>
-  </div><br /><br /> !-->
+ 
 
     <p class="facebookLogin">Please login through Facebook<br /><br />
 			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
@@ -35,20 +35,11 @@
 			</p>
 		</div>
 
-		<!--<div id="facebookPhoto" class="profile">
-			<h3>Profile Photo</h3>
-			<img id="photo" class='img-responsive' src="http://hci.stanford.edu/courses/cs547/Resources/Pictures/klemmer_grad.jpg" />
-		</div>
-
-Don't have account?<a href="sgnup.html" style="font-family:'Play', sans-serif;">&nbsp;Sign Up</a> -->
+		
 
 </form>
 </div>
 
-<script src="/routes/logn.js"></script>
-
-{{> facebook}}
-	<script src="/js/facebook.js"></script>
 
 </body>
 

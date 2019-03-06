@@ -2,7 +2,7 @@ body
 {
     font-family: Tahoma, Geneva, sans-serif;
     color: #fff;
-    background: url(study-notebooks.jpg);
+    background: url(../images/study-notebooks.jpg);
     background-size: cover;
 }
 .signin

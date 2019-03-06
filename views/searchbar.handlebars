@@ -23,37 +23,45 @@
 <body>
 <!--<button onclick="goBack()" >Back</button>-->
 <a href="/index"><input type="button" value="back" onclick="goBack()"></a>
-<h5>Add Your Courses</h5>
-  <!--animation <div class="buscar-caja">
-    <input type="text" name="" class="buscar-txt" placeholder="type in course name..."/>
-      <a class="buscar-btn">
-        <i class="far fa-search"></i>
-      </a>
-  </div> -->
-  {{#each class}}
-    <div class="class">
-      <!--<img class="img-responsive" src="{{imageURL}}"> -->
-        <a href="#">
-          <p>{{name}}</p>
-          <!--<p>{{description}}</p> -->
-  {{/each}}
+<center><h3>Add Your Courses</h3></center>
 
-<form id="addClassForm" role="form" method="get" action="/add">
+<h4>Search by:</h4>
+<div align="left">
+<select name="mydropdown">
+<option value="Major">Major</option>
+<option value="Department">Department</option>
+<option value="Lower/Upper">Lower/Upper</option>
+<option value="College">College</option>
+</select>
+</div><br><br>
+  
+  <form id="addClassForm" role="form" method="get" action="/add">
 
     <!--<h3>Add a class</h3>-->
       <div class="form-group">
-        <label for="name">Name:</label>
+        <!-- <label for="name">Name:</label> -->
         <input type="text" class="form-control" id="name" placeholder="Name" name="name" href="index.handlebars">
+
       </div>
-      <!--<div class="form-group">
-        <label for="description">Description:</label>
-        <input type="text" class="form-control" id="description" placeholder="Description" name="description">
-      </div>-->
-      <input type="submit" id="submitBtn" class="btn btn-default" value="Add the class"></input>
+      
+      <center><input type="submit" id="submitBtn" class="btn btn-default" value="Add the class"></input></center>
+</form><br><br>
+
+
+
+{{#each class}}
+  <div class="class">
+    
+  <a href="./frnds">
+  <p>{{name}}</p></a>
+ <!--  <a href="/classList" > {{ name }} </a> -->
+          <!--<p>{{description}}</p> -->
+{{/each}}
+
 
       <script src="js/jquery-1.11.0.js"></script>
       <script src="js/bootstrap.js"></script>
       <script src="js/sb-friends.js"></script>
-</form>
+
 </body>
 </html>

@@ -1,4 +1,7 @@
+var data = require('../data.json');
 exports.viewSearchbar=function(req,res){
-	
-	res.render('searchbar');
+	var SearchName = req.query.name;
+
+	console.log(SearchName);
+	res.render('searchbar', data);
 }

@@ -8,17 +8,52 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
-    <script>
+ <!--    <script>
     function goBack() {
     window.history.back()
     }
-  </script>
+  </script> -->
 
   </head>
   <body>
 
-<a href="/index"><input type="button" value="back" onclick="goBack()"></a>
+<!-- <a href="/index"><input type="button" value="back" onclick="goBack()"></a> -->
 
+<!--NAVIGATION BAR-->
+<nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <!-- <a href="#" class="logo">logo</a> -->
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="/index" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="/searchbar" class="nav-links">Classes</a>
+            </li>
+            <li>
+                <a href="/studybuddy" class="nav-links">StudyBuddy</a>
+            </li>
+            <li>
+                <a href="/profile" class="nav-links">Profile</a>
+            </li>
+            <li>
+                <a href="/" class="nav-links">Sign-Out</a>
+            </li>
+          
+        </ul>
+    </nav>
+<script type="text/javascript">
+  let mainNav = document.getElementById('js-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+navBarToggle.addEventListener('click', function () {
+  mainNav.classList.toggle('active');
+});
+
+</script>
+<!--NAVIGATION BAR-->
     <div class="card middle">
       <div class="top-section">
         <img src="/images/p.png" alt="">

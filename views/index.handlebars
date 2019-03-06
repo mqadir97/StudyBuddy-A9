@@ -8,13 +8,34 @@
 </head>
 
 <body>
-	<div class="jumbotron">
-		<h1 id="name">Student Name</h1>
-	</div>
+	<!--NAVIGATION BAR-->
+<nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <!-- <a href="#" class="logo">logo</a> -->
+        <ul class="main-nav" id="js-menu">
+            
+            <li>
+                <a href="/" class="nav-links">Sign-Out</a>
+            </li>
+          
+        </ul>
+    </nav>
+<script type="text/javascript">
+  let mainNav = document.getElementById('js-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+navBarToggle.addEventListener('click', function () {
+  mainNav.classList.toggle('active');
+});
+
+</script>
+<!--NAVIGATION BAR-->
 	<div class="signin">
 	
 	<form>
-		<a href="/"><input type="button" id="signout" value="Sign-out" onclick="goBack()"></a><br /><br /> 
+		<!-- <a href="/"><input type="button" id="signout" value="Sign-out" onclick="goBack()"></a><br /><br />  -->
 		<h2 style="color:#fff;">StudyBuddy</h2>
 		<!--	/studybuddies --> <a href="/studybuddy"><input type="button" value="Study Buddies" /></a><br /><br /> 
 			<a href="/searchbar"><input type="button" value="Classes" /></a><br /><br />

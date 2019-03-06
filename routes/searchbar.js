@@ -4,4 +4,8 @@ exports.viewSearchbar=function(req,res){
 
 	console.log(SearchName);
 	res.render('searchbar', data);
+
+
+
 }
+

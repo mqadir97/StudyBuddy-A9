@@ -12,7 +12,8 @@ body{
 }
 .middle{
   position: absolute;
-  top: 50%;
+  padding-top: 50px;
+  top: 65%;
   left: 50%;
   transform: translate(-50%,-50%);
 }

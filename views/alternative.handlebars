@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/alternative.css">
+
+  <script>
+    function goBack() {
+    window.history.back()
+    }
+  </script>
+
+  <title>SearchBar</title>
+
+ </head>
+<body>
+<!--<button onclick="goBack()" >Back</button>-->
+<a href="/index"><input type="button" value="back" onclick="goBack()"></a>
+<center><h3>Add Your Courses</h3></center>
+
+<h4>Search by:</h4>
+<div align="left">
+<select name="mydropdown">
+<option value="Major">Major</option>
+<option value="Department">Department</option>
+<option value="Lower/Upper">Lower/Upper</option>
+<option value="College">College</option>
+</select>
+</div><br><br>
+  
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+<ul id="myUL">
+  <li><a href="#">cogs111</a></li>
+  <li><a href="#">cogs222</a></li>
+
+  <li><a href="#">cogs333</a></li>
+  <li><a href="#">cse555</a></li>
+
+  <li><a href="#">cse666</a></li>
+  <li><a href="#">cse777</a></li>
+  <li><a href="#">psyc222</a></li>
+  <li><a href="#">psy333</a></li>
+  <li><a href="#">psy555</a></li>
+
+  <li><a href="#">econ123</a></li>
+  <li><a href="#">econ11</a></li>
+
+  <li><a href="#">wicw22</a></li>
+  <li><a href="#">mgt18</a></li>
+  <li><a href="#">mgt22</a></li>
+</ul>
+
+<!-- {{#each class}}
+  <div class="class">
+    
+  <a href="./frnds">
+  <p>{{name}}</p></a>
+  <a href="/classList" > {{ name }} </a>
+          <p>{{description}}</p> -->
+<!-- {{/each}} -->
+ 
+      <script src="js/jquery-1.11.0.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/sb-friends.js"></script>
+
+</body>
+</html>

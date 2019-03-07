@@ -27,7 +27,9 @@ var app = express();
 
 var frnds = require('./routes/frnds');
 
-var pictureLink = require('./routes/profile');
+var alternative = require('./routes/alternative');
+
+// var pictureLink = require('./routes/profile');
 
 
 // all environments
@@ -71,6 +73,8 @@ app.get('/addSB', addSB.addBuddy);
 app.get('/add', add.addClass);
 
  app.get('/frnds', frnds.addFrnds);
+
+ app.get('/alternative', alternative.viewAlternative);
 
 
 http.createServer(app).listen(app.get('port'), function(){

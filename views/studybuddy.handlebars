@@ -82,17 +82,17 @@ navBarToggle.addEventListener('click', function () {
           <label for="description">Description:</label>
           <input type="text" class="form-control" id="description" placeholder="Description" name="description">
         </div>-->
-        <input type="submit" id="submitBtn" class="btn btn-default" value="Add the buddy"></input>
+       <center> <input type="submit" id="submitBtn" class="btn btn-default" value="Add the buddy"></input></center>
 
   {{#each studybuddy}}
     <div class="studybuddy">
-      <a href="{{name}}"></a>
-        <p>{{name}}</p>
+      <a href="./profile">
+        <p>{{name}}</p></a>
     </div>
   {{/each}} 
-  {{#each studybuddy}} 
+ <!--  {{#each studybuddy}} 
     <a href="/profile"><input type="link"/></a>
-  {{/each}}
+  {{/each}} -->
 
   
   </form>

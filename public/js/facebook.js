@@ -23,7 +23,9 @@ function changeUser(response) {
   console.log(response);
   $("#photo").attr("src", response.picture.data.url);
   $("#name").text(response.name);
-  // localStorage.setItem( '#photo', response.picture.data.url);
+  localStorage.setItem( 'photo', response.picture.data.url);
+
+  localStorage.setItem('name', response.name);
 }
 
 // var pictureLink = localStorage.getItem('fbPicture'); 

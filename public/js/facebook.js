@@ -26,6 +26,7 @@ function changeUser(response) {
   localStorage.setItem( 'photo', response.picture.data.url);
 
   localStorage.setItem('name', response.name);
+  window.location.href = "./index";
 }
 
 // var pictureLink = localStorage.getItem('fbPicture'); 

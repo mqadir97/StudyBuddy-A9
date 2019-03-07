@@ -23,4 +23,8 @@ function changeUser(response) {
   console.log(response);
   $("#photo").attr("src", response.picture.data.url);
   $("#name").text(response.name);
+  // localStorage.setItem( '#photo', response.picture.data.url);
 }
+
+// var pictureLink = localStorage.getItem('fbPicture'); 
+// $(“#photo”).attr( “src”, response.picture.data.url );

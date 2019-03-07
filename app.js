@@ -27,7 +27,7 @@ var app = express();
 
 var frnds = require('./routes/frnds');
 
-
+var pictureLink = require('./routes/profile');
 
 
 // all environments

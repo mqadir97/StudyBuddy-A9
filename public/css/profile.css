@@ -4,7 +4,7 @@ body{
   background: #76322c;
 }
 .card{
-  width: 440px;
+  width: 340px;
   background: #f1f1f1;
   overflow: hidden;
   font-family: "montserrat",sans-serif;
@@ -12,7 +12,7 @@ body{
 }
 .middle{
   position: absolute;
-  top: 65%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
@@ -62,12 +62,12 @@ body{
 }
 
 .info-section{
-  padding: 100px;
-  padding-top: 60px;
+  padding: 40px;
+  padding-top: 0;
   color: #333;
 }
 h2{
-  position: left;
+  position: relative;
   font-size: 16px;
 }
 .border{
@@ -97,6 +97,7 @@ p{
 .s-m a:hover{
   color: #778beb;
 }
+
 * {
             box-sizing: border-box;
             padding: 0;
